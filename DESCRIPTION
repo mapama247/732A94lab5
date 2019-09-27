@@ -1,4 +1,4 @@
-Package: api_pkg
+Package: APIpkg
 Type: Package
 Title: OpenStreetMap API with R
 Version: 1.0

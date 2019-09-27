@@ -1,29 +1,30 @@
-\name{api_pkg-package}
-\alias{api_pkg-package}
-\alias{api_pkg}
+\name{APIpkg-package}
+\alias{APIpkg-package}
+\alias{APIpkg}
 \docType{package}
 \title{
-\packageTitle{api_pkg}
+\packageTitle{APIpkg}
 }
 \description{
-\packageDescription{api_pkg}
+\packageDescription{APIpkg}
 }
 \details{
 
 The DESCRIPTION file:
-\packageDESCRIPTION{api_pkg}
-\packageIndices{api_pkg}
+\packageDESCRIPTION{APIpkg}
+\packageIndices{APIpkg}
 ~~ An overview of how to use the package, including the most important functions ~~
 }
 \author{
-\packageAuthor{api_pkg}
+\packageAuthor{APIpkg}
 
-Maintainer: \packageMaintainer{api_pkg}
+Maintainer: \packageMaintainer{APIpkg}
 }
 \references{
 ~~ Literature or other references for background information ~~
 }
-~~ Optionally other standard keywords, one per line, from file KEYWORDS in the R documentation directory ~~
+~~ Optionally other standard keywords, one per line, from file KEYWORDS in the R ~~
+~~ documentation directory ~~
 \keyword{ package }
 \seealso{
 ~~ Optional links to other man pages, e.g. ~~

@@ -4,7 +4,7 @@ Package to connect to the OpenStreetMap API using R.
 
 ## Build status:
 
-Copy&Paste from Travis.
+[![Build Status](https://travis-ci.com/mapama247/732A94lab5.svg?token=yxggzpqgxBxZe745ysak&branch=master)](https://travis-ci.com/mapama247/732A94lab5)
 
 ## Installation:
 
