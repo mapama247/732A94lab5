@@ -9,6 +9,10 @@ Description: Fifth lab from the course Advanced R Programming!
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-Suggests: testthat
+Suggests: 
+    testthat,
+    knitr,
+    rmarkdown
 RoxygenNote: 6.1.1
 Depends: R (>= 2.10)
+VignetteBuilder: knitr
