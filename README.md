@@ -1,6 +1,6 @@
 # 732A94 - Group12 - Lab5
 
-Package to connect to the OpenStreetMap API using R.
+Musical taste comparator between different countries using Spotify's data.
 
 ## Build status:
 
