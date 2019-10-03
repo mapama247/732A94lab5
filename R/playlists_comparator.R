@@ -4,7 +4,7 @@ Sys.setenv(SPOTIFY_CLIENT_ID = 'b5c4a61095b74ce597f886697704ea3c')
 Sys.setenv(SPOTIFY_CLIENT_SECRET = '6b2271624f0c49a9abb65255b84cb462')
 access_token <- get_spotify_access_token()
 
-top50df <- read.csv("countries_uri.csv", header=TRUE, sep=",")
+#top50df <- read.csv("countries_uri.csv", header=TRUE, sep=",")
 
 compare_countries <- function(countries=list("DE","AR","AU","AT","BE","BO","BR","BG","CA","CZ","CL","CO","CR","DK","EC","SV","SK","ES","US","EE","PH","FI","FR","GR","GT","NL","HN","HK","HU","IN","ID","IE","IS","IL","IT","JP","LV","LT","LU","MY","MT","MX","NI","NO","NZ","PA","PY","PE","PL","PT","UK","DO","RO","SG","ZA","SE","SW","TH","TW","TK","UY","VN")){
 	if( prod(countries %in% top50df$CODE)==0 )
