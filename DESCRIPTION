@@ -1,6 +1,6 @@
 Package: APIpkg
 Type: Package
-Title: OpenStreetMap API with R
+Title: Musical taste comparator between countries.
 Version: 1.0
 Date: 2019-09-27
 Author: Marc Pamies and Abhinay Krishna
