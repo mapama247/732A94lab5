@@ -17,3 +17,116 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(APIpkg)
 ```
+
+# Description
+
+Musical taste comparator between different countries using Spotify's data.
+\newline
+\newline
+
+# Usage
+```R
+install.packages("devtools")
+devtools::install_github("mapama247/732A94lab5")
+```
+# Functions
+
+## compare_countries( countries_list )
+
+### Input
+Takes as input a list of several 2-letter country codes. List of available countries:
+
+* Argentina,AR
+* Australia,AU
+* Austria,AT
+* Belgium,BE
+* Bolivia,BO
+* Brazil,BR
+* Bulgaria,BG
+* Canada,CA
+* Czech Republic,CZ
+* Chile,CL
+* Colombia,CO
+* Costa Rica,CR
+* Dinamarca,DK
+* Dominican Republic,DO
+* Ecuador,EC
+* El Salvador,SV
+* Estonia,EE
+* Finland,FI
+* France,FR
+* Germany,DE
+* Greece,GR
+* Guatemala,GT
+* Honduras,HN
+* Hong Kong,HK
+* Hungary,HU
+* India,IN
+* Indonesia,ID
+* Ireland,IE
+* Iceland,IS
+* Israel,IL
+* Italy,IT
+* Japan,JP
+* Latvia,LV
+* Lithuania,LT
+* Luxembourg,LU
+* Malaysia,MY
+* Malta,MT
+* Mexico,MX
+* Netherlands,NL
+* Nicaragua,NI
+* Norway,NO
+* New Zeland,NZ
+* Panama,PA
+* Paraguay,PY
+* Peru,PE
+* Philippines,PH
+* Poland,PL
+* Portugal,PT
+* Romania,RO
+* Slovakia,SK
+* Spain,ES
+* Singapore,SG
+* South Africa,ZA
+* Sweden,SE
+* Switzerland,SW
+* Thailand,TH
+* Taiwan,TW
+* Turkey,TK
+* United Kingdom,UK
+* Uruguay,UY
+* United States,US
+* Vietnam,VN
+
+### Output
+Returns a data.frame with the following features averaged over all songs in each countrie's playlist:
+
+* code
+* followers
+* explicit
+* danceability
+* energy
+* key
+* loudness
+* mode
+* speechiness
+* acousticness
+* instrumentalness
+* liveness
+* valence
+* tempo
+
+## Resource
+
+Check the [Spotify API website](https://developer.spotify.com/documentation/web-api/) for further information.
+
+
+
+## Examples
+```R
+countries <- list("ES","PT")
+spain_vs_portugal <- playlists_comparator(countries)
+
+comparison_all_countries <- playlists_comparator()
+```
