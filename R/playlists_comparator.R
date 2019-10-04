@@ -1,3 +1,5 @@
+install.packages("installr",repos="https://github.com/talgalili/installr/")
+
 library(spotifyr)
 library(installr)
 
