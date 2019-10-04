@@ -1,7 +1,7 @@
-install.packages("installr",repos="https://github.com/talgalili/installr/")
-
 library(spotifyr)
-library(installr)
+
+#install.packages("installr",repos="https://github.com/talgalili/installr/")
+#library(installr) #add also to description>imports
 
 Sys.setenv(SPOTIFY_CLIENT_ID = 'b5c4a61095b74ce597f886697704ea3c')
 Sys.setenv(SPOTIFY_CLIENT_SECRET = '6b2271624f0c49a9abb65255b84cb462')
@@ -13,8 +13,8 @@ compare_countries <- function(countries=list("DE","AR","AU","AT","BE","BO","BR",
 	#	stop("The input list can only contain characters!")
 	if( prod(countries %in% top50df$CODE)==0 )
 		stop("The input list contains non-valid country codes!")
-	if( !is.empty(countries[duplicated(countries)]) )
-		stop("The input list contains repeated elements! It makes no sense to compare a country with itself :)")
+	#if( !is.empty(countries[duplicated(countries)]) )
+	#	stop("The input list contains repeated elements! It makes no sense to compare a country with itself :)")
 	
 	i <- 1
 	followers <- list()
