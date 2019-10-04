@@ -7,8 +7,8 @@ access_token <- get_spotify_access_token()
 
 compare_countries <- function(countries=list("DE","AR","AU","AT","BE","BO","BR","BG","CA","CZ","CL","CO","CR","DK","EC","SV","SK","ES","US","EE","PH","FI","FR","GR","GT","NL","HN","HK","HU","IN","ID","IE","IS","IL","IT","JP","LV","LT","LU","MY","MT","MX","NI","NO","NZ","PA","PY","PE","PL","PT","UK","DO","RO","SG","ZA","SE","SW","TH","TW","TK","UY","VN")){
 	load("sysdata.rda")
-	if ( !all(lapply(countries,is.character)) )
-		stop("The input list can only contain characters!")
+	#if ( !all(lapply(countries,is.character)) )
+	#	stop("The input list can only contain characters!")
 	if( prod(countries %in% top50df$CODE)==0 )
 		stop("The input list contains non-valid country codes!")
 	if( !is.empty(countries[duplicated(countries)]) )
@@ -32,7 +32,7 @@ compare_countries <- function(countries=list("DE","AR","AU","AT","BE","BO","BR",
 	for(playlist in playlists){
 		features <- data.frame()
 		for(song in playlist){
-			features[nrow(features)+1,1:11] <- get_track_audio_features(song)
+			features[nrow(features)+1,1:11] <- get_track_audio_features(song)[,1:11]
 			#print(features) # comment to run faster
 		}
 		avg_features[nrow(avg_features)+1,1:11] <- apply(features,2,mean)
