@@ -14,6 +14,6 @@ test_that("Check if correct inputs", {
 
 test_that("Check if numeric outputs", {
 	expect_equal(is.numeric(compare_countries(list("DE", "AR"))$energy), TRUE)
-	expect_equal(is.numeric(get_followers()), TRUE)
-	expect_equal(is.numeric(get_explicit()), TRUE)
+	expect_equal(is.numeric(get_followers()$DE), TRUE)
+	expect_equal(is.numeric(get_explicit()$AR), TRUE)
 })
