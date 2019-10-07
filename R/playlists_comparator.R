@@ -7,7 +7,6 @@ access_token <- get_spotify_access_token()
 ######################################################################################################################################################
 
 compare_countries <- function(countries=list("DE","AR","AU","AT","BE","BO","BR","BG","CA","CZ","CL","CO","CR","DK","EC","SV","SK","ES","US","EE","PH","FI","FR","GR","GT","NL","HN","HK","HU","IN","ID","IE","IS","IL","IT","JP","LV","LT","LU","MY","MT","MX","NI","NO","NZ","PA","PY","PE","PL","PT","UK","DO","RO","SG","ZA","SE","SW","TH","TW","TK","UY","VN")){
-<<<<<<< HEAD
   # Load dataframe containing the URI of each countries's playlist:
   read.csv("countries_uri.csv")
   # Remove duplicates from input list:
@@ -41,7 +40,7 @@ compare_countries <- function(countries=list("DE","AR","AU","AT","BE","BO","BR",
   avg_features$code <- sapply(countries, paste0, collapse=",")
   avg_features$followers <- as.numeric(sapply(followers, paste0, collapse=","))
   avg_features$expl <- sapply(explicit, paste0, collapse=",")
-  names(avg_features) <- c("danceability","energy","key","loudness","mode","speechiness","acousticness","instrumentalness","liveness","valence","tempo","code","followers","explicit")
+  names(avg_features) <- c("Danceability","Energy","Key","Loudness","Mode","Speechiness","Acousticness","Instrumentalness","Liveness","Valence","Tempo","Code","Followers","Explicit")
   
   return(avg_features)
 }
@@ -60,9 +59,8 @@ get_followers <- function(){
   result_df <- data.frame(followers)
   names(result_df) <- countries
   return(result_df)
-=======
 	# Load dataframe containing the URI of each countries's playlist:
-	load("sysdata.rda")
+	read.csv("countries_uri.csv")
 	# Remove duplicates from input list:
 	countries <- countries[!duplicated(countries)]
 	# Check that all elements of the input list are correct:
@@ -100,7 +98,7 @@ get_followers <- function(){
 }
 
 get_followers <- function(){
-	load("sysdata.rda")
+	read.csv("countries_uri.csv")
 	
 	countries=list("DE","AR","AU","AT","BE","BO","BR","BG","CA","CZ","CL","CO","CR","DK","EC","SV","SK","ES","US","EE","PH","FI","FR","GR","GT","NL","HN","HK","HU","IN","ID","IE","IS","IL","IT","JP","LV","LT","LU","MY","MT","MX","NI","NO","NZ","PA","PY","PE","PL","PT","UK","DO","RO","SG","ZA","SE","SW","TH","TW","TK","UY","VN")
 	
@@ -113,13 +111,11 @@ get_followers <- function(){
 	result_df <- data.frame(followers)
 	names(result_df) <- countries
 	return(result_df)
->>>>>>> 4f5acab19ba48a55bbe11679ec4e5e54d375c99f
 }
 
 ######################################################################################################################################################
 
 get_explicit <- function(){
-<<<<<<< HEAD
   read.csv("countries_uri.csv")
   countries=list("DE","AR","AU","AT","BE","BO","BR","BG","CA","CZ","CL","CO","CR","DK","EC","SV","SK","ES","US","EE","PH","FI","FR","GR","GT","NL","HN","HK","HU","IN","ID","IE","IS","IL","IT","JP","LV","LT","LU","MY","MT","MX","NI","NO","NZ","PA","PY","PE","PL","PT","UK","DO","RO","SG","ZA","SE","SW","TH","TW","TK","UY","VN")
   
@@ -132,8 +128,7 @@ get_explicit <- function(){
   result_df <- data.frame(explicit)
   names(result_df) <- countries
   return(result_df)
-=======
-	load("sysdata.rda")
+	read.csv("countries_uri.csv")
 	
 	countries=list("DE","AR","AU","AT","BE","BO","BR","BG","CA","CZ","CL","CO","CR","DK","EC","SV","SK","ES","US","EE","PH","FI","FR","GR","GT","NL","HN","HK","HU","IN","ID","IE","IS","IL","IT","JP","LV","LT","LU","MY","MT","MX","NI","NO","NZ","PA","PY","PE","PL","PT","UK","DO","RO","SG","ZA","SE","SW","TH","TW","TK","UY","VN")
 	
@@ -146,7 +141,6 @@ get_explicit <- function(){
 	result_df <- data.frame(explicit)
 	names(result_df) <- countries
 	return(result_df)
->>>>>>> 4f5acab19ba48a55bbe11679ec4e5e54d375c99f
 }
 
 ######################################################################################################################################################

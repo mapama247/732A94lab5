@@ -8,7 +8,7 @@ test_that("Wrong inputs throws error", {
   expect_error(compate_countries(list("ES", "AMXC")))
 })
 
-test_that("Check if numeric", {
-  expect_equal(compare_countries(is.numeric(avg_features$energy)), TRUE)
+#test_that("Check if numeric", {
+ #expect_equal(compare_countries(is.numeric(avg_features$energy)), TRUE)
   
-})
+#})
