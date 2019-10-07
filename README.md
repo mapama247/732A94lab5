@@ -4,7 +4,8 @@ Musical taste comparator between different countries using Spotify's data.
 
 ## Build status:
 
-[![Build Status](https://travis-ci.com/mapama247/732A94lab5.svg?token=yxggzpqgxBxZe745ysak&branch=master)](https://travis-ci.com/mapama247/732A94lab5)
+[![Build 
+Status](https://travis-ci.org/mapama247/732A94lab5.svg?branch=master)](https://travis-ci.org/mapama247/732A94lab5)
 
 ## Installation:
 
