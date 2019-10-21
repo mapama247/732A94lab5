@@ -8,7 +8,7 @@ access_token <- get_spotify_access_token()
 
 compare_countries <- function(countries=list("DE","AR","AU","AT","BE","BO","BR","BG","CA","CZ","CL","CO","CR","DK","EC","SV","SK","ES","US","EE","PH","FI","FR","GR","GT","NL","HN","HK","HU","IN","ID","IE","IS","IL","IT","JP","LV","LT","LU","MY","MT","MX","NI","NO","NZ","PA","PY","PE","PL","PT","UK","DO","RO","SG","ZA","SE","SW","TH","TW","TK","UY","VN")){
   # Load dataframe containing the URI of each countries's playlist:
-  read.csv("countries_uri.csv")
+  top50df<-read.csv("countries_uri.csv")
   # Remove duplicates from input list:
   countries <- countries[!duplicated(countries)]
   # Check that all elements of the input list are correct:
